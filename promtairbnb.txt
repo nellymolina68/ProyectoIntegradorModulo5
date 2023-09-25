@@ -1,0 +1,50 @@
+Se requiere hacer un trabajo en PowerBI sobre AirBnB y se cuenta con los siguiente 
+Recursos:
+| Archivo
+| ------ 
+| calendar.csv: (incluye datos de ocupación, precio, etc.)  
+| listings.csv: Detalle de cada operación de Listing (incluye datos descriptivos de la vivienda (ambientes, host, noches mínimas y máximas, cantidad de reviews)
+| reviews.csv Datos de review de los usuarios.
+
+Y el El objetivo que se busca con el análisis de los datos seleccionados es realizar una análisis exploratorio de tipo descriptivo para entender el negocio de airbnb. 
+En base al análisis descriptivo encontrar oportunidades de inversión que puedan ser capitalizadas utilizando dicho modelo de negocio.
+
+### Preguntas 
+* ¿Qué podemos describir con los datasets acerca del negocio de airbnb?
+* ¿Cuál es la mejor forma de invertir en AirBnb?
+* ¿Cómo se compara con otras alternativas de inversión?
+* Si presentamos nuestras conclusiones a un grupo inversor: ¿Qué propuestas le haríamos?
+* ¿En donde sugerimos invertir?
+* ¿En qué tipo de propiedad?
+
+Un Ejemplo de la información en las tablas:
+
+calendar.csv
+´´listing_id	date	available	price	adjusted_price	minimum_nights	maximum_nights
+50778	26/04/2020	f	$2,655.00	$2,655.00	5	1125´´
+
+listings.csv
+´´id	listing_url	scrape_id	last_scraped	name	summary	space	description	experiences_offered	neighborhood_overview	notes	transit	access	interaction	house_rules	thumbnail_url	medium_url	picture_url	xl_picture_url	host_id	host_url	host_name	host_since	host_location	host_about	host_response_time	host_response_rate	host_acceptance_rate	host_is_superhost	host_thumbnail_url	host_picture_url	host_neighbourhood	host_listings_count	host_total_listings_count	host_verifications	host_has_profile_pic	host_identity_verified	street	neighbourhood	neighbourhood_cleansed	neighbourhood_group_cleansed	city	state	zipcode	market	smart_location	country_code	country	latitude	longitude	is_location_exact	property_type	room_type	accommodates	bathrooms	bedrooms	beds	bed_type	amenities	square_feet	price	weekly_price	monthly_price	security_deposit	cleaning_fee	guests_included	extra_people	minimum_nights	maximum_nights	minimum_minimum_nights	maximum_minimum_nights	minimum_maximum_nights	maximum_maximum_nights	minimum_nights_avg_ntm	maximum_nights_avg_ntm	calendar_updated	has_availability	availability_30	availability_60	availability_90	availability_365	calendar_last_scraped	number_of_reviews	number_of_reviews_ltm	first_review	last_review	review_scores_rating	review_scores_accuracy	review_scores_cleanliness	review_scores_checkin	review_scores_communication	review_scores_location	review_scores_value	requires_license	license	jurisdiction_names	instant_bookable	is_business_travel_ready	cancellation_policy	require_guest_profile_picture	require_guest_phone_verification	calculated_host_listings_count	calculated_host_listings_count_entire_homes	calculated_host_listings_count_private_rooms	calculated_host_listings_count_shared_rooms	reviews_per_month
+11508	https://www.airbnb.com/rooms/11508	20200426042522	43947	Amazing Luxurious Apt-Palermo Soho		LUXURIOUS NEW APT: 1 BDRM- POOL/ GYM/ SPA/ 24-HR SECURITY Palermo Soho, Buenos Aires BUILDING DETAILS Luxury building in the heart of the trendy Palermo Soho 24-hour security  Outdoor pool  FREE Gym and Spa in building (top floor with panoramic view) Lounge/common area for parties and guests with outdoor deck (top floor with panoramic view) Laundry in building  Restaurant on building grounds  Optional house keeping and room service  AREA: PALERMO SOHO Minutes walking distance from most popular bars, restaurants and boutiques Buenos Aires Eco-Park within walking distance Botanical Garden and magnificent park with lake (â€œBosques de Palermoâ€) within walking distance One block from Santa Fe Avenue and â€œD Lineâ€ subway  All major bus lines within walking distance APARTMENT DETAILS Fully Furnished 1 bedroom apartment  Wifi and Cable TV Air conditioner/ heat Balcony with entrance from bedroom and living room Marble counter tops Hardwood floors    Floor to ceiling windows â€“ lots of light Beauti	LUXURIOUS NEW APT: 1 BDRM- POOL/ GYM/ SPA/ 24-HR SECURITY Palermo Soho, Buenos Aires BUILDING DETAILS Luxury building in the heart of the trendy Palermo Soho 24-hour security  Outdoor pool  FREE Gym and Spa in building (top floor with panoramic view) Lounge/common area for parties and guests with outdoor deck (top floor with panoramic view) Laundry in building  Restaurant on building grounds  Optional house keeping and room service  AREA: PALERMO SOHO Minutes walking distance from most popular bars, restaurants and boutiques Buenos Aires Eco-Park within walking distance Botanical Garden and magnificent park with lake (â€œBosques de Palermoâ€) within walking distance One block from Santa Fe Avenue and â€œD Lineâ€ subway  All major bus lines within walking distance APARTMENT DETAILS Fully Furnished 1 bedroom apartment  Wifi and Cable TV Air conditioner/ heat Balcony with entrance from bedroom and living room Marble counter tops Hardwood floors    Floor to ceiling windows â€“ lots of light Beauti	none	AREA: PALERMO SOHO Minutes walking distance from most popular bars, restaurants and boutiques Buenos Aires Eco-Park within walking distance Botanical Garden and magnificent park with lake (â€œBosques de Palermoâ€) within walking distance One block from Santa Fe Avenue and â€œD Lineâ€ subway  All major bus lines within walking distance		All major bus lines are nearby. Stop: Plaza Italia. Subway D is located 2 blocks away. Citi bike stop 2 blocks away: Plaza Italia.	Outdoor pool and outdoor area on first floor FREE Gym with spectacular views of the city (top floor with panoramic view) Spa in building (top floor with panoramic view)		During your stay in the apt, you must follow the below house rules: 1-Turn off lights and air conditioners every time you leave the apartment. 2-Be clean and neat at all times and take out garbage each day (large bins are in the emergency stairwell to the left). 3- Be mindful of the hardwood floors â€“ Make sure not to scratch the floors by dragging luggage or using shoes with heels in the apartment. Do not move furniture around. 4- Be mindful of the furniture - use coasters for your drinking glasses on the wooden and glass surfaces at all times.  5 - Be mindful of walls: do not place luggage near walls and be careful when opening doors to avoid scratching or denting walls or chipping paint. Do not hang anything from walls. 6 â€“ When using the outdoor pool on the ground floor at the building entrance, follow all the rules stated in the pool area. 7- When using the exercise room located on the 31st floor (you must take the middle elevator for the gym), follow all the rules stated in the gy			https://a0.muscache.com/im/pictures/19357696/b1de16cb_original.jpg?aki_policy=large		42762	https://www.airbnb.com/users/show/42762	Candela	40087	New York, New York, United States	-	within a few hours	1	1	t	https://a0.muscache.com/im/users/42762/profile_pic/1332809447/original.jpg?aki_policy=profile_small	https://a0.muscache.com/im/users/42762/profile_pic/1332809447/original.jpg?aki_policy=profile_x_medium	Palermo	1	1	['email', 'phone', 'reviews', 'kba']	t	t	Buenos Aires, Capital Federal, Argentina	Palermo	Palermo		Buenos Aires	Capital Federal		Buenos Aires	Buenos Aires, Argentina	AR	Argentina	-34.58184	-58.42415	t	Condominium	Entire home/apt	2	1	1	1	Real Bed	{TV,"Cable TV",Internet,Wifi,"Air conditioning",Pool,Kitchen,Doorman,Gym,Elevator,"Hot tub","Buzzer/wireless intercom",Heating,Washer,Dryer,Essentials,"24-hour check-in",Hangers,"Hair dryer",Iron,"Laptop friendly workspace","translation missing: en.hosting_amenity_49","translation missing: en.hosting_amenity_50","Hot water","Bed linens",Microwave,"Coffee maker",Refrigerator,"Dishes and silverware","Cooking basics",Oven,Stove,"Patio or balcony","Long term stays allowed","Host greets you"}		3983	39828	82975	0	3319	1	0	2	1125	2	2	1125	1125	2	1125	2 months ago	t	30	60	90	365	43947	26	4	41092	43797	95	10	10	10	10	10	10	f			f	f	strict_14_with_grace_period	f	f	1	1	0	0	0.27
+´´
+
+reviews.csv
+
+´´listing_id	id	date	reviewer_id	reviewer_name	comments
+11508	1615861	02/07/2012	877808	Charlie	"Amazing place!
+
+Location: short walk to all the bars and shops in Palermo soho and hollywood, plus also the subway
+
+Apartment: v modern and with all you could want. Living room was perfect for relaxing in with a large sofa, massive TV and amazing view through the floor to ceiling windows. Bedroom hits the spot with a big windows,  wardrobe and comfy bed. Bathroom also of the same standard
+
+Building: has an amazing gym set-up on the 31 floor - always seemed to be empty and a real pleasure to use. "
+´´
+
+Puedes construir un analisis y estrategia para implementar este proyecto de DATA ANALYTICS 
+ en PowerBI.
+
+
+
+
+
+
